@@ -1,0 +1,14 @@
+<!DOCTYPE html><html><head><meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>正在支付中</title>
+</head>
+<body>
+    <div style="text-align: center;font-size: 18px;margin: 100px 0 30px 0;">抖音H5</div>
+    <a href="alipays://platformapi/startApp?appId=20000125&orderSuffix=h5_route_token%3D%22RZ42XsyXbs67S07Q6dckpYylqNi8dQmobilecashierRZ42%22%26is_h5_route%3D%22true%22%26h5_route_senior%3D%22true%22#Intent;scheme=alipays;package=com.eg.android.AlipayGphone;end" style="width: 90%;background: #1AAD19;text-align: center;color: #fff;margin: 0 auto;box-sizing: border-box;font-size: 18px;line-height: 2.55555556;border-radius: 5px;display: block;text-decoration: none;">点击跳转支付5元</a>
+    <br>
+    <div align="center">超时请勿支付</div>
+</body></html>
