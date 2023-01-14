@@ -1,5 +1,5 @@
 <?php
-$list = explode("\n",file_get_contents("../list.txt"));//这个是视频文件名，一行一个链接和标题
+$list = explode("\n",file_get_contents("./list.txt"));//这个是视频文件名，一行一个链接和标题
 foreach ($list as $key => $val){
     
     if(!empty($val)){
