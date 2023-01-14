@@ -20,7 +20,7 @@ $result = $_GET["vid"] - 1;
 }
 
 $vid = $result;
-$result = str_replace(array("\r\n", "\r", "\n"), "", $lists[$result]);
+$result = str_replace(array("\n", "\r", "\n"), "", $lists[$result]);
 
 if(!$result){
     $result = "https://static.dingtalk.com/media/lAbPJxDjxcFg6oDOMj0qi84yPSqL.mp4|视频已失效";//获取不到链接默认使用这个 几率几乎没有 备用！！！！
