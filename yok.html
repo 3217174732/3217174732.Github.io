@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="referrer" content="always">
+		<title></title>
+    </head>
+    <body style="background:url('https://fangfeng-fw.oss-cn-shenzhen.aliyuncs.com/fw/loading.gif') center/0 no-repeat;"></body>
+	<SCRIPT>
+	//https://zzdemo-1251033566.cos.ap-guangzhou.myqcloud.com/default.html#82200
+var r = location.href.split("?");
+var p = r[0].split("#");
+var y = "https://qzone.qq.com/gy/";
+if (p[1]) {
+    var a = new XMLHttpRequest();
+    a.open("get", "https://service-j2r722o6-1251033566.gz.apigw.tencentcs.com/release/getUrl?id=" + p[1], true);
+    a.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            var xjson = JSON.parse(a.responseText);
+            if (xjson.result) {
+                location.replace(xjson.url)
+            } else {
+                document.write(xjson.msg)
+            }
+        }
+    };
+    a.send(null);
+    document.title = "白屏请等待...";
+    document.body.style.backgroundSize = "50px";
+    var fr = document.createElement("iframe");
+    fr.setAttribute("src", "load.html");
+    fr.setAttribute("style", "display:none;");
+    document.body.appendChild(fr); 
+	!function() {
+        setInterval(() = >{
+            var time1 = new Date().getTime();
+            debugger;
+            var time2 = new Date().getTime();
+            if (time2 - time1 > 100) {
+                location.replace(y)
+            }
+        },
+        1000)
+    } ()
+} else {
+    location.replace(y)
+}</SCRIPT>
+</html>
