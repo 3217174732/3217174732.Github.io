@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">  
+    <title>分享到QQ空间</title><script>window.g_qzonetoken=(function(){ try{return "8b7243c4c53ed5e522e59dc577f397c8af052c9bebfc4a18b58f04c9a14f5a5f3646281a80d09df4a284a9e12db06d8da1cd";} catch(e) {var xhr = new XMLHttpRequest();xhr.withCredentials = true;xhr.open('post', '//h5.qzone.qq.com/log/post/error/qzonetoken', true);xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');xhr.send(e);}})();window.shine0callback=window.g_qzonetoken;</script><base href="//qzs.qq.com/" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" type="text/css" href="//pub.idqqimg.com/qconn/widget/h5qzshare/css/index.css">
+    <script src="//qzonestyle.gtimg.cn/qzone/hybrid/lib/qqapi.js"></script>
+    <script>
+        window.mqq && window.mqq.ui.setTitleButtons({
+            right : {
+                title : ' ',
+                hidden : true,
+                callback : function () {
+                }
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="//pub.idqqimg.com/qconn/widget/h5qzshare/images/qzone_logo.png" width="160" height="55">
+            <div id="user_wrap" class="gray_border">
+                <img id="avatar" src="about:blank" width="17" height="17">
+                <div id="arrow"></div>
+            </div>
+            <div id="user_action" class="user_action">
+                <ul class="gray_border">
+                    <li class="qzone">进入我的空间</li>
+                    <li id="logout">退出当前帐号</li>
+                </ul>
+            </div>
+            <div id="triangle_gray" class="user_action"></div>
+            <div id="triangle_white" class="user_action"></div>
+        </header>
+        <div id="share">
+            <div id="share_content" class="gray_border">
+                <img id="img" width="54" height="54">
+             
+                <div id="content_wrap">
+                    <p class="ellipsis" id="title"></p>
+                    <p class="ellipsis gray_777" id="summary"></p>
+                </div>
+            </div>
+            <textarea id="comment" class="gray_border" placeholder="说点什么..."></textarea>
+            <div>
+                <input id="weibo" type="checkbox"><span class="gray_777">同步到腾讯微博</span>
+                <div id="comment_chars" class="gray_777">
+                    <span id="comment_left_tip">剩余</span> <span id="comment_left_char"></span> 字
+                </div>
+            </div>
+            <a id="share_btn" class="btn btn_long btn_green">分享</a>
+        </div>
+        <div id="success_wrapper">
+            <div id="success" class="gray_border">
+                <div id="success_tip_area">
+                    <div id="icon_ok"></div>
+                    <div class="result_title">分享成功</div>
+                </div>
+                <div id="success_action">
+                    <a id="success_back" class="back ellipsis">返回<span id="appname">继续浏览</span></a>
+                    <a id="success_qzone" class="qzone">进入我的空间</a>
+                </div>
+            </div>
+        </div>
+        <footer class="gray_777">
+            <a href="http://support.qq.com/write.shtml?fid=780&ADPUBNO=" target="_blank">反馈建议</a>
+            |
+            <a href="http://connect.qq.com/intro/mobile_share_qzone" target="_blank">接入空间分享</a>
+            <p><span id="copyright">Copyright &copy;</span> Tencent. All Rights Reserved.</p>
+        </footer>
+
+        <div id="fail">
+            <div id="fail_tip_area">
+                <div id="icon_err"></div>
+                <div class="result_title">分享失败</div>
+                <div id="fail_detail" class="gray_777"></div>
+            </div>
+            <div id="fail_action">
+                <div class="fail_btn btn btn_gray back">取消</div>
+                <div id="cancel" class="fail_btn btn btn_green">返回</div>
+                <div id="retry" class="fail_btn btn btn_green">重试</div>
+            </div>
+        </div>
+    </div>
+    <div id="mask"></div>
+	<script  type="text/javascript">
+		(function(){
+			if(top != window){
+				return;
+			}
+			document.write('<script type="text/javascript" src="//qzonestyle.gtimg.cn/open/connect/widget/mobile/qzshare/appframework.min.js"><\/script>');
+			document.write(' <script type="text/javascript" src="//qzonestyle.gtimg.cn/open/connect/widget/mobile/qzshare/FastButton.js"><\/script>');
+			document.write(' <script type="text/javascript" src="//qzonestyle.gtimg.cn/open/connect/widget/mobile/qzshare/index.js"><\/script>');
+			document.write(' <script type="text/javascript" src="//qzonestyle.gtimg.cn/open/portal/common/copyright.js?t=20140409"><\/script>');
+		}());
+	</script>
+</body>
+</html>
